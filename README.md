@@ -22,6 +22,11 @@ The code of the consumer microservice can be found in the following link.
 https://github.com/vasiliskl/trg-consumer
 
 More information about running the components and their tests, live metrics, Dockerfiles and how to scale is provided in each project.
+The docker images are pushed to public repositories, they can be run as the examples below:
+
+docker run --name trg-producer -d -p 8180:8080 vasiliskl/trg-producer:latest
+
+docker run --name trg-consumer -d -p 8181:8080 vasiliskl/trg-consumer:latest
 
 ## Technology
 In this project, Quarkus framework with Apache Kafka and PostgreSQL were used.
